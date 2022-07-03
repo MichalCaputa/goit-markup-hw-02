@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="author" content="Michał Caputa" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,198 +12,226 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <title>Web Studio</title>
   </head>
 
-  <body class="containter">
-    <!-- naglowek strony-->
-    <header>
-      <div>
-        <p>
-          <a class="logo" href="index.html"
-            >Web<span class="logo-span">Studio</span>
-          </a>
-        </p>
-      </div>
+  <body class="centr">
+    <header class="header">
+      <div class="container header-flex">
+        <!-- naglowek strony-->
 
-      <div>
-        <nav>
+        <a class="logo" href="index.html"
+          >Web<span class="logo-span">Studio</span>
+        </a>
+        <nav class="navi">
           <!-- nawigacja -->
-          <ul class="navi-list">
-            <li><a href="#Agencja">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#Kontakt">Kontakt</a></li>
+          <ul class="list navi-list">
+            <li><a class="age-link" href="#Agencja">Agencja</a></li>
+            <li><a class="port-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="cont-link" href="#Kontakt">Kontakt</a></li>
           </ul>
         </nav>
-      </div>
-      <div>
-        <ul class="navi-list">
-          <li><a href="mailto:info@studio.com"> info@studio.com</a></li>
-          <li><a href="call:+48111111111">+48 111 111 111</a></li>
+        <ul class="list cont-list">
+          <li>
+            <a class="email-header" href="mailto:info@studio.com">
+              info@studio.com</a
+            >
+          </li>
+          <li>
+            <a class="phone-header" href="call:+48111111111">+48 111 111 111</a>
+          </li>
         </ul>
       </div>
     </header>
     <!--main-->
     <main>
-      <div class="mai">
-        <h1 id="Agencja">Efektywne rozwiazania dla waszego biznesu</h1>
-        <button class="button">zamow usluge</button>
+      <div class="sentence container">
+        <h1 class="sentence-header" id="Agencja">
+          Efektywne rozwiazania dla waszego biznesu
+        </h1>
+        <button class="sentence-button" type="button" onclick="alert('Hej')">
+          zamów usługę
+        </button>
       </div>
 
-      <section>
-        <ul class="atuty-list">
-          <li>
-            <div>
-              <h3 id="Portfolio">Lorem, ipsum.</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-                excepturi obcaecati placeat praesentium esse asperiores quo
-                voluptas maxime ipsa quisquam.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Lorem, ipsum.</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-                excepturi obcaecati placeat praesentium esse asperiores quo
-                voluptas maxime ipsa quisquam.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Lorem, ipsum.</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-                excepturi obcaecati placeat praesentium esse asperiores quo
-                voluptas maxime ipsa quisquam.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Lorem, ipsum.</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-                excepturi obcaecati placeat praesentium esse asperiores quo
-                voluptas maxime ipsa quisquam.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Czym sie zajmujemy?</h2>
-        <ul class="zajmujemy-list">
-          <li>
-            <img
-              src="images/Img1.jpg"
-              alt="close-up-image-programer-working-his-desk-office"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/Img2.jpg"
-              alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/Img3.jpg"
-              alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
-      </section>
-      <div>
-        <h2>Nasz zespół</h2>
-        <figure>
-          <!-- Dowolna tresc graficzna: zdjecie, wykres, diagram itp. -->
-        </figure>
-        <ul class="team-list">
-          <li>
-            <figure>
-              <img
-                src="images/Dev1.jpg"
-                alt="Brunet w okularach i broda"
-                width="270"
-                height="260"
-              />
-            </figure>
-            <figure>
-              <figcaption>
-                <p>John doe</p>
-                <p>Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/Dev2.jpg"
-                alt="Blondynka w okularach"
-                width="270"
-                height="260"
-              />
-            </figure>
-            <figure>
-              <figcaption>
-                <p>John doe</p>
-                <p>Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/Dev3.jpg"
-                alt="Brunet z delikatnym zarostem"
-                width="270"
-                height="260"
-              />
-            </figure>
-            <figure>
-              <figcaption>
-                <p>John doe</p>
-                <p>Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/Dev4.jpg"
-                alt="Brunet w okularach z broda i zalozonymi rekoma"
-                width="270"
-                height="260"
-              />
-            </figure>
-            <figure>
-              <figcaption>
-                <p>John doe</p>
-                <p>UI Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
+      <div class="main">
+        <section class="section">
+          <div class="container">
+            <ul class="list main-text-list">
+              <li>
+                <h3 class="main-header-item">Lorem, ipsum.</h3>
+                <p class="main-text-item">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                  excepturi obcaecati placeat praesentium esse asperiores quo
+                  voluptas maxime ipsa quisquam.
+                </p>
+              </li>
+              <li>
+                <h3 class="main-header-item">Lorem, ipsum.</h3>
+                <p class="main-text-item">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                  excepturi obcaecati placeat praesentium esse asperiores quo
+                  voluptas maxime ipsa quisquam.
+                </p>
+              </li>
+              <li>
+                <h3 class="main-header-item">Lorem, ipsum.</h3>
+                <p class="main-text-item">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                  excepturi obcaecati placeat praesentium esse asperiores quo
+                  voluptas maxime ipsa quisquam.
+                </p>
+              </li>
+              <li>
+                <h3 class="main-header-item">Lorem, ipsum.</h3>
+                <p class="main-text-item">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+                  excepturi obcaecati placeat praesentium esse asperiores quo
+                  voluptas maxime ipsa quisquam.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-      <h3 id="Kontakt">
-        <a class="logo" href="index.html"
-          >Web<span class="logo-span">Studio</span>
-        </a>
-      </h3>
-      <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@example.com">info@example.com</a>
-      <a href="tel:+48111111111">+48 111 111 111</a>
+        <section class="main-section section">
+          <div class="containter">
+            <h2 class="main-header">Czym sie zajmujemy?</h2>
+            <ul class="list main-image-list">
+              <li>
+                <img
+                  src="images/Img1.jpg"
+                  alt="close-up-image-programer-working-his-desk-office"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/Img2.jpg"
+                  alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="images/Img3.jpg"
+                  alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="team section">
+        <div class="container">
+          <h2 class="team-header">Nasz zespół</h2>
+          <figure>
+            <!-- Dowolna tresc graficzna: zdjecie, wykres, diagram itp. -->
+          </figure>
+          <ul class="list team-list">
+            <li class="team-card">
+              <figure>
+                <img
+                  class="team-card-image"
+                  src="images/Dev1.jpg"
+                  alt="Brunet w okularach i broda"
+                  width="270"
+                  height="260"
+                />
+              </figure>
+              <figure>
+                <figcaption>
+                  <p class="team-card-name">John doe</p>
+                  <p class="team-card-description">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team-card">
+              <figure>
+                <img
+                  class="team-card-image"
+                  src="images/Dev2.jpg"
+                  alt="Blondynka w okularach"
+                  width="270"
+                  height="260"
+                />
+              </figure>
+              <figure>
+                <figcaption>
+                  <p class="team-card-name">John doe</p>
+                  <p class="team-card-description">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team-card">
+              <figure>
+                <img
+                  class="team-card-image"
+                  src="images/Dev3.jpg"
+                  alt="Brunet z delikatnym zarostem"
+                  width="270"
+                  height="260"
+                />
+              </figure>
+              <figure>
+                <figcaption>
+                  <p class="team-card-name">John doe</p>
+                  <p class="team-card-description">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team-card">
+              <figure>
+                <img
+                  class="team-card-image"
+                  src="images/Dev4.jpg"
+                  alt="Brunet w okularach z broda i zalozonymi rekoma"
+                  width="270"
+                  height="260"
+                />
+              </figure>
+              <figure>
+                <figcaption>
+                  <p class="team-card-name">John doe</p>
+                  <p class="team-card-description">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="list">
+          <li class="footer-logo-item">
+            <a class="footer-logo" href="index.html"
+              >Web<span class="footer-logo-span">Studio</span>
+            </a>
+          </li>
+          <li class="footer-address-item">
+            <address class="footer-address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+          </li>
+          <li class="footer-email-item">
+            <a class="footer-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="footer-phone-item">
+            <a class="footer-phone" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
